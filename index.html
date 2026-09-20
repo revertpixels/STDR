@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UPVC Windows &amp; Doors | Glass, Aluminium &amp; Steel Solutions | Snigdha Traders</title>
+<meta name="description" content="Snigdha Traders provides UPVC windows and doors, glass solutions, aluminium systems and steel fabrication for residential, commercial and architectural projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;600;700&family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<style>
+/* ============ DESIGN TOKENS ============ */
+:root{
+  --ink:#0f1c2e;
+  --ink-soft:#3d4f63;
+  --muted:#6b7c8f;
+  --line:#e2eaf2;
+  --line-soft:#eef3f8;
+  --paper:#f5f8fb;
+  --paper-2:#eef4fa;
+  --white:#ffffff;
+  --blue:#1b8ec9;
+  --blue-d:#0e6fa3;
+  --blue-l:#e8f5fc;
+  --blue-glow:#3eb4e8;
+  --blue-soft:#d6ecf9;
+  --night:#0a1628;
+  --night-2:#122338;
+  --night-3:#0c1a2f;
+  --gold:#d4a854;
+  --r:18px;
+  --s:0 20px 50px rgba(15,28,46,.07);
+  --s-lg:0 30px 80px rgba(15,28,46,.12);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+/* ============ RESET ============ */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;border:0;background:0;cursor:pointer}
+ul{list-style:none}
+::selection{background:var(--blue);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--paper)}
+::-webkit-scrollbar-thumb{background:var(--blue-d);border-radius:8px}
+
+/* ============ UTILITIES ============ */
+.w{width:min(1240px,92%);margin:0 auto}
+h1,h2,h3,h4,.syne{font-family:'Syne',sans-serif;letter-spacing:-.03em;line-height:1.08}
+h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:800}
+h2{font-size:clamp(1.95rem,4vw,3rem);font-weight:700;letter-spacing:-.035em}
+h3{font-size:1.2rem;font-weight:700}
+p{color:var(--ink-soft)}
+.serif{font-family:'Instrument Serif',serif;font-weight:400;font-style:italic;letter-spacing:-.02em}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.9rem;transition:.35s var(--ease);white-space:nowrap;cursor:pointer;font-family:inherit;line-height:1}
+.btn svg{width:18px;height:18px}
+.btn-b{background:var(--blue);color:#fff;box-shadow:0 6px 15px rgba(27,142,201,.15)}
+.btn-b:hover{background:var(--blue-d);transform:translateY(-2px);box-shadow:0 8px 20px rgba(27,142,201,.22)}
+.btn-g{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-g:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.btn-w{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-w:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+.btn-n{background:var(--night);color:#fff}
+.btn-n:hover{background:#152a45;transform:translateY(-2px)}
+.btn-o{background:#f1f4f8;color:var(--ink);border:1.5px solid #dde5ee}
+.btn-o:hover{border-color:var(--ink);background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--blue-d)}
+.btn-light:hover{background:var(--blue-d);color:#fff;transform:translateY(-2px)}
+
+/* ============ NAV ============ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;transition:.35s var(--ease)}
+.nav.on{padding:12px 0;background:rgba(245,248,251,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line);box-shadow:0 8px 30px rgba(15,28,46,.04)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;z-index:2}
+.brand-m{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,var(--blue),var(--blue-d));color:#fff;font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem;box-shadow:0 8px 20px rgba(27,142,201,.35);position:relative;overflow:hidden}
+.brand-m::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.3) 50%,transparent 60%);transform:translateX(-100%);transition:.6s}
+.brand:hover .brand-m::after{transform:translateX(100%)}
+.brand b{display:block;font-family:'Syne',sans-serif;font-weight:700;font-size:1.02rem;color:#fff;transition:.3s}
+.brand small{color:rgba(255,255,255,.7);font-size:.68rem;letter-spacing:.06em}
+.nav.on .brand b{color:var(--ink)}
+.nav.on .brand small{color:var(--blue)}
+.menu{display:flex;gap:6px;align-items:center;background:rgba(255,255,255,.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);padding:6px;border-radius:99px;transition:.35s}
+.nav.on .menu{background:#fff;border-color:var(--line);box-shadow:var(--s)}
+.menu a{padding:8px 20px;border-radius:99px;font-size:.85rem;font-weight:700;color:rgba(255,255,255,.75);transition:all .3s var(--ease);letter-spacing:.02em}
+.nav.on .menu a{color:var(--ink-soft)}
+.menu a:hover{color:#fff;background:rgba(255,255,255,.15);transform:translateY(-1px)}
+.nav.on .menu a:hover{color:var(--blue-d);background:var(--blue-l);transform:translateY(-1px)}
+.menu a.active{color:#fff;background:var(--blue)}
+.nav.on .menu a.active{color:#fff;background:var(--blue)}
+.nav-cta{display:flex;gap:10px;align-items:center}
+.ham{display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.25);place-items:center;color:#fff;background:transparent}
+.nav.on .ham{border-color:var(--line);color:var(--ink);background:#fff}
+.mnav{display:none;position:fixed;inset:0;background:var(--night);z-index:60;flex-direction:column;justify-content:center;align-items:center;gap:12px;padding:24px}
+.mnav.open{display:flex}
+.mnav a{color:#fff;font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:700}
+.mnav .close{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);color:#fff;display:grid;place-items:center}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:100vh;min-height:100dvh;height:auto;display:flex;align-items:center;padding:120px 0 70px;background:var(--night);color:#fff;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;opacity:.55;display:block}
+.hero-media .hero-video-mobile{display:none}
+@media(max-width:767px){.hero-media .hero-video-desktop{display:none}.hero-media .hero-video-mobile{display:block}}
+.hero-media::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,22,40,.94) 0%,rgba(10,22,40,.72) 42%,rgba(10,22,40,.25) 68%,rgba(10,22,40,.45) 100%),linear-gradient(to top,rgba(10,22,40,.85),transparent 45%)}
+.hero-orb{position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(62,180,232,.2);right:-120px;top:10%;pointer-events:none}
+.hero-orb i{position:absolute;inset:48px;border-radius:50%;border:1px solid rgba(62,180,232,.12)}
+.hero-grid{position:relative;z-index:2;width:min(1240px,92%);margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue-glow)}
+.kicker::before{content:'';width:28px;height:2px;background:var(--blue-glow)}
+.hero h1{color:#fff;max-width:18ch;font-size:clamp(2.15rem,4.8vw,4.2rem);line-height:1.05}
+.hero h1 em{font-style:normal;color:var(--blue-glow)}
+.hero-lead{margin-top:1rem;max-width:32rem;font-size:1.08rem;color:rgba(232,238,245,.88);line-height:1.7}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.35rem}
+.hero-side{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:24px;padding:28px;margin-bottom:0}
+.hero-side h3{color:#fff;font-size:1.15rem;margin-bottom:24px;font-weight:700}
+.hero-side ul{display:grid;gap:12px}
+.hero-side li{display:flex;gap:12px;align-items:flex-start;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.08);font-size:.9rem;color:rgba(255,255,255,.82)}
+.hero-side li:last-child{border:0;padding:0}
+.hero-side li span{width:28px;height:28px;border-radius:8px;flex:0 0 auto;display:grid;place-items:center;background:rgba(62,180,232,.15);color:var(--blue-glow);font-family:'Syne',sans-serif;font-weight:700;font-size:.75rem}
+.hero-side li strong{display:block;color:#fff;font-weight:600;margin-bottom:2px}
+@media(min-width:981px){.hero-side{transform:translateY(105px)}}
+
+/* ============ SPECIALITIES CAROUSEL ============ */
+.speciality{background:#fff;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.speciality::before,.speciality::after{content:'';position:absolute;top:70px;bottom:0;width:120px;z-index:3;pointer-events:none}
+.speciality::before{left:0;background:linear-gradient(90deg,#fff,transparent)}
+.speciality::after{right:0;background:linear-gradient(-90deg,#fff,transparent)}
+.spec-head{display:flex;justify-content:space-between;align-items:baseline;padding:34px 4% 22px;border-bottom:1px solid var(--line-soft);flex-wrap:wrap;gap:14px;position:relative;z-index:4}
+.spec-head .lft{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.spec-head .lft b{font-family:'Syne',sans-serif;font-weight:800;font-size:1.15rem;color:var(--ink)}
+.spec-head .lft span{font-size:.85rem;color:var(--muted);font-weight:500}
+.spec-head .rgt{display:flex;align-items:center;gap:10px;font-size:.78rem;color:var(--blue-d);font-weight:600;letter-spacing:.03em}
+.spec-head .rgt .dot{width:8px;height:8px;background:var(--blue);border-radius:50%;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(27,142,201,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(27,142,201,0)}}
+.spec-rail-wrap{padding:32px 0;position:relative}
+.spec-rail{display:flex;gap:22px;overflow-x:auto;scroll-behavior:auto;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab;touch-action:pan-y;-webkit-overflow-scrolling:touch;padding-bottom:12px}
+.spec-rail::-webkit-scrollbar{display:none}
+.spec-card{flex:0 0 340px;height:400px;border-radius:22px;overflow:hidden;position:relative;background:var(--paper);border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.spec-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(15,28,46,.15)}
+.spec-card img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);pointer-events:none}
+.spec-card:hover img{transform:scale(1.08)}
+.spec-card::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,22,40,.95) 5%,rgba(10,22,40,.4) 45%,transparent 75%);pointer-events:none}
+.spec-body{position:absolute;inset:auto 0 0 0;padding:24px;color:#fff;z-index:2;pointer-events:none}
+.spec-num{display:inline-block;font-family:'Syne',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--blue-glow);margin-bottom:8px}
+.spec-body h4{font-family:'Syne',sans-serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:6px;letter-spacing:-.02em}
+.spec-body p{font-size:.85rem;color:rgba(255,255,255,.82);margin:0;line-height:1.5}
+.spec-tag{position:absolute;top:16px;left:16px;padding:6px 12px;background:rgba(255,255,255,.14);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:99px;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;z-index:2}
+
+/* ============ SECTIONS ============ */
+.sec{padding:clamp(70px,10vw,120px) 0}
+.sec-h{max-width:38rem;margin-bottom:44px}
+.sec-h p{margin-top:14px;font-size:1.02rem}
+.sec-h.center{text-align:center;margin-left:auto;margin-right:auto}
+.sec-h.center .tag{margin-left:auto;margin-right:auto;display:table}
+.tag{display:inline-block;margin-bottom:14px;padding:7px 14px;border-radius:999px;background:var(--blue-l);color:var(--blue-d);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+
+/* ============ SERVICES ============ */
+.services{background:linear-gradient(180deg,var(--paper) 0%,#fff 100%);position:relative;overflow:hidden}
+.services::before{content:'';position:absolute;top:-100px;right:-140px;width:420px;height:420px;background:radial-gradient(circle,var(--blue-soft),transparent 70%);opacity:.7;pointer-events:none}
+.services-top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px;position:relative;z-index:2}
+.services-top .lft{max-width:34rem}
+.services-top .rgt{display:flex;align-items:center;gap:14px;padding:14px 20px;background:#fff;border:1px solid var(--line);border-radius:99px;box-shadow:var(--s)}
+.services-top .rgt svg{width:20px;height:20px;color:var(--blue)}
+.services-top .rgt span{font-size:.85rem;font-weight:600;color:var(--ink)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative;z-index:2}
+.svc{min-height:420px;position:relative;overflow:hidden;border:1px solid rgba(30,159,217,.12);background:#fff;border-radius:22px;transition:transform .45s var(--ease),border-color .45s var(--ease),box-shadow .45s var(--ease)}
+.svc:hover{transform:translateY(-8px);border-color:var(--blue);box-shadow:var(--s-lg)}
+.svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;transition:transform .6s var(--ease),opacity .6s}
+.svc:hover img{transform:scale(1.08);opacity:1}
+.svc::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(10,22,40,.55) 55%,rgba(10,22,40,.94) 95%);z-index:1}
+.svc-num{position:absolute;top:18px;left:18px;padding:7px 14px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-radius:99px;font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.14em;color:var(--blue-d);z-index:3}
+.svc-arrow{position:absolute;top:18px;right:18px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;z-index:3;transition:.4s var(--ease);box-shadow:var(--s);opacity:0;transform:translateY(-6px)}
+.svc-arrow svg{width:16px;height:16px;color:var(--ink);transition:.4s var(--ease)}
+.svc:hover .svc-arrow{opacity:1;transform:none;background:var(--blue)}
+.svc:hover .svc-arrow svg{color:#fff}
+.svc-body{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:26px 24px;color:#fff}
+.svc-body h3{color:#fff;font-size:1.25rem;margin-bottom:6px}
+.svc-body p{font-size:.85rem;color:rgba(255,255,255,.85);line-height:1.55}
+
+/* ============ SHOWCASE ============ */
+.showcase{background:linear-gradient(180deg,#fff 0%,var(--paper) 100%);position:relative;overflow:hidden}
+.showcase::before{content:'';position:absolute;top:10%;left:-150px;width:400px;height:400px;background:radial-gradient(circle,var(--blue-l),transparent 70%);opacity:.5;pointer-events:none}
+.showcase::after{content:'';position:absolute;bottom:5%;right:-150px;width:400px;height:400px;background:radial-gradient(circle,var(--blue-soft),transparent 70%);opacity:.4;pointer-events:none}
+.showcase-head{text-align:center;max-width:44rem;margin:0 auto 60px;position:relative;z-index:2}
+.showcase-head .tag{margin-left:auto;margin-right:auto;display:table}
+.sc-stack{display:grid;gap:28px;position:relative;z-index:2}
+.sc-row{display:grid;grid-template-columns:1fr 1.15fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:32px;overflow:hidden;box-shadow:var(--s);transition:transform .5s var(--ease),box-shadow .5s var(--ease);min-height:460px}
+.sc-row:hover{transform:translateY(-6px);box-shadow:var(--s-lg)}
+.sc-row.reverse{grid-template-columns:1.15fr 1fr}
+.sc-row.reverse .sc-info{order:2}
+.sc-row.reverse .sc-media{order:1}
+.sc-info{padding:clamp(30px,4vw,54px);display:flex;flex-direction:column;justify-content:center;position:relative}
+.sc-num{font-family:'Syne',sans-serif;font-size:clamp(3.8rem,6vw,5.6rem);font-weight:800;line-height:.9;background:linear-gradient(135deg,var(--blue-l),var(--blue-soft));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--blue-l);margin-bottom:14px;letter-spacing:-.05em}
+.sc-info h3{font-family:'Syne',sans-serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:700;color:var(--ink);margin-bottom:16px;letter-spacing:-.03em;line-height:1.1}
+.sc-info h3 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--blue-d)}
+.sc-info>p{color:var(--ink-soft);font-size:1rem;line-height:1.7;margin-bottom:22px;max-width:36rem}
+.sc-feats{display:grid;gap:10px;margin-bottom:26px}
+.sc-feats li{display:flex;align-items:flex-start;gap:10px;font-size:.9rem;color:var(--ink-soft);line-height:1.55}
+.sc-feats li svg{width:18px;height:18px;color:var(--blue);flex:0 0 auto;margin-top:3px}
+.sc-cta{display:flex;flex-wrap:wrap;gap:10px}
+.sc-media{position:relative;overflow:hidden;background:var(--night);min-height:360px}
+.sc-slides{position:absolute;inset:0}
+.sc-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s var(--ease),transform 6s var(--ease);transform:scale(1.02)}
+.sc-slides img.active{opacity:1;transform:scale(1.08)}
+.sc-media::after{content:'';position:absolute;inset:0;background:linear-gradient(45deg,rgba(10,22,40,.35),transparent 40%,transparent 60%,rgba(10,22,40,.25));pointer-events:none;z-index:2}
+.sc-dots{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:3}
+.sc-dots span{width:8px;height:8px;border-radius:99px;background:rgba(255,255,255,.4);transition:.4s var(--ease);cursor:pointer}
+.sc-dots span.on{background:#fff;width:24px}
+.sc-badge{position:absolute;top:20px;left:20px;padding:8px 14px;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-radius:99px;font-family:'Syne',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-d);z-index:3;box-shadow:var(--s)}
+
+/* ============ WORK GALLERY ============ */
+.gal-sec{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.gal-sec::before{content:'';position:absolute;top:-200px;left:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(62,180,232,.12),transparent 70%);pointer-events:none}
+.gal-sec .tag{background:rgba(62,180,232,.12);color:var(--blue-glow)}
+.gal-sec h2{color:#fff}
+.gal-sec .sec-h p{color:rgba(255,255,255,.72)}
+.gal-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-template-rows:220px 220px;gap:12px;position:relative;z-index:2}
+.gal-grid img{width:100%;height:100%;object-fit:cover;border-radius:14px;filter:saturate(.75) brightness(.9);transition:transform .6s var(--ease),filter .5s;cursor:pointer}
+.gal-grid img:hover{transform:scale(1.03);filter:saturate(1.1) brightness(1);z-index:2;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.gal-grid img:first-child{grid-row:span 2}
+.gal-footer{text-align:center;margin-top:36px;position:relative;z-index:2}
+
+/* ============ ABOUT ============ */
+.about-sec{background:#fff;position:relative;overflow:hidden}
+.about-sec::before{content:'';position:absolute;top:20%;left:-100px;width:300px;height:300px;background:radial-gradient(circle,var(--blue-l),transparent 70%);pointer-events:none}
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center;position:relative;z-index:2}
+.about-visual{position:relative;height:560px}
+.about-visual .av-main{position:absolute;inset:0;border-radius:28px;overflow:hidden;box-shadow:var(--s-lg)}
+.about-visual .av-main img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.about-visual:hover .av-main img{transform:scale(1.05)}
+.about-visual .av-badge{position:absolute;left:-24px;bottom:-24px;background:#fff;padding:22px 26px;border-radius:20px;box-shadow:var(--s-lg);z-index:3;border:1px solid var(--line)}
+.about-visual .av-badge b{display:block;font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--blue-d);line-height:1}
+.about-visual .av-badge span{display:block;margin-top:6px;font-size:.7rem;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.about-visual .av-chip{position:absolute;top:24px;right:24px;padding:10px 18px;background:rgba(10,22,40,.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:99px;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;z-index:2}
+.about-lead{font-family:'Instrument Serif',serif;font-weight:400;font-style:italic;font-size:clamp(1.35rem,2vw,1.7rem);color:var(--blue-d);line-height:1.45;margin:20px 0 18px;letter-spacing:-.015em}
+.about-values{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.av-item{padding:20px;background:var(--paper);border:1px solid var(--line);border-radius:16px;transition:.35s}
+.av-item:hover{background:#fff;border-color:var(--blue);transform:translateY(-3px);box-shadow:var(--s)}
+.av-item .ic{width:40px;height:40px;border-radius:11px;background:var(--blue-l);color:var(--blue-d);display:grid;place-items:center;margin-bottom:12px}
+.av-item .ic svg{width:20px;height:20px}
+.av-item b{display:block;font-family:'Syne',sans-serif;font-size:.98rem;color:var(--ink);margin-bottom:4px}
+.av-item span{font-size:.82rem;color:var(--ink-soft);line-height:1.5}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;padding:24px 20px;background:linear-gradient(145deg,#fff,var(--paper-2));border:1px solid rgba(27,142,201,.18);border-radius:24px;box-shadow:var(--s)}
+.astat{position:relative;text-align:center}
+.astat:not(:last-child)::after{content:'';position:absolute;right:-8px;top:10%;bottom:10%;width:1px;background:rgba(27,142,201,.18)}
+.astat b{display:block;font-family:'Syne',sans-serif;font-size:clamp(1.4rem,4.5vw,2.2rem);font-weight:800;color:var(--blue-d);line-height:1}
+.astat span{display:block;margin-top:6px;font-size:clamp(.55rem,1.8vw,.7rem);color:var(--blue-d);letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+
+/* ============ WHY CHOOSE US ============ */
+.why-sec{background:linear-gradient(180deg,#fff 0%,var(--paper) 100%);position:relative;overflow:hidden}
+.why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative;z-index:2}
+.why-item{padding:26px 20px;background:#fff;border:1px solid var(--line);border-radius:16px;transition:.35s var(--ease)}
+.why-item:hover{border-color:var(--blue);transform:translateY(-4px);box-shadow:var(--s)}
+.why-item .ic{width:44px;height:44px;border-radius:12px;background:var(--blue-l);color:var(--blue-d);display:grid;place-items:center;margin-bottom:16px}
+.why-item .ic svg{width:22px;height:22px}
+.why-item b{display:block;font-family:'Syne',sans-serif;font-size:1rem;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em}
+.why-item span{font-size:.85rem;color:var(--ink-soft);line-height:1.6}
+
+/* ============ PROCESS ============ */
+.process{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.process::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(62,180,232,.06),transparent 70%);pointer-events:none}
+.process .tag{background:rgba(62,180,232,.14);color:var(--blue-glow)}
+.process h2{color:#fff}
+.process .sec-h p{color:rgba(255,255,255,.72)}
+.steps-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative;z-index:2}
+.step-cell{min-height:355px;padding:28px 24px 25px;border:1px solid rgba(121,159,188,.22);border-radius:10px;background:linear-gradient(155deg,rgba(24,47,73,.98),rgba(13,30,50,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.025);position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;align-items:flex-start;cursor:pointer;transition:border-color .35s var(--ease),background .35s var(--ease),box-shadow .35s var(--ease)}
+.step-cell::before{content:'';position:absolute;width:3px;height:0;left:0;top:0;background:linear-gradient(var(--blue-glow),var(--blue));transition:height .4s var(--ease)}
+.step-cell::after{content:'';position:absolute;width:180px;height:180px;right:-84px;bottom:-92px;border-radius:50%;background:radial-gradient(circle,rgba(55,167,220,.14),transparent 68%);opacity:.5;z-index:-1;transition:opacity .35s var(--ease)}
+.step-cell:hover,.step-cell.is-active{background:linear-gradient(155deg,#173b5d,#0d233d);border-color:rgba(77,190,239,.62);box-shadow:0 15px 32px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.06)}
+.step-cell:hover::before,.step-cell.is-active::before{height:100%}
+.step-cell:hover::after,.step-cell.is-active::after{opacity:1}
+.step-cell .num{position:absolute;top:24px;left:24px;margin:0;font-family:'Syne',sans-serif;font-size:2.35rem;font-weight:800;line-height:1;letter-spacing:-.03em;color:var(--blue-glow);transition:color .35s var(--ease)}
+.step-icon{position:absolute;top:24px;right:22px;width:48px;height:48px;border-radius:9px;border:1px solid rgba(91,192,234,.35);background:rgba(62,180,232,.1);color:var(--blue-glow);display:grid;place-items:center;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease)}
+.step-icon svg{width:22px;height:22px;stroke-width:1.7}
+.step-cell:hover .step-icon,.step-cell.is-active .step-icon{background:var(--blue);border-color:var(--blue);color:#fff}
+.step-cell h3{margin-top:auto;margin-bottom:9px;padding-top:24px;font-size:1.12rem;line-height:1.22;color:#fff;position:relative}
+.step-cell h3::before{content:'';position:absolute;top:0;left:0;width:32px;height:1px;background:rgba(99,202,244,.72)}
+.step-cell p{font-size:.86rem;line-height:1.62;color:rgba(238,245,251,.7)}
+
+/* ============ REVIEWS ============ */
+.rev-sec{position:relative;overflow:hidden;color:#fff;background:radial-gradient(900px 420px at 8% 10%,rgba(62,180,232,.13),transparent 62%),radial-gradient(760px 420px at 92% 88%,rgba(27,142,201,.10),transparent 64%),linear-gradient(135deg,#081827 0%,#0b1d31 48%,#0e263e 100%)}
+.rev-sec::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.28;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+.rev-sec .w{position:relative;z-index:2}
+.reviews-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end;margin-bottom:28px}
+.reviews-intro-copy{max-width:820px}
+.reviews-intro .tag{margin-bottom:16px;background:rgba(62,180,232,.10);color:var(--blue-glow);border:1px solid rgba(62,180,232,.22)}
+.reviews-intro h2{margin:0;color:#fff;max-width:18ch;font-size:clamp(2.25rem,5vw,4.15rem);line-height:1.02;letter-spacing:-.045em}
+.reviews-intro h2 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--blue-glow);letter-spacing:-.02em}
+.reviews-intro p{max-width:650px;margin-top:18px;color:rgba(232,240,247,.70);font-size:1rem;line-height:1.7}
+.google-review-link{display:flex;align-items:center;gap:13px;min-width:218px;padding:15px 17px;color:#fff;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:16px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 18px 42px rgba(0,0,0,.16);font-size:.78rem;line-height:1.35;transition:transform .35s var(--ease),border-color .35s var(--ease),background .35s var(--ease)}
+.google-review-link:hover{transform:translateY(-4px);background:rgba(255,255,255,.09);border-color:rgba(62,180,232,.38)}
+.google-review-link b{display:block;color:#fff;font-size:.88rem;margin-top:2px}
+.google-review-link svg{width:18px;color:var(--blue-glow);margin-left:auto}
+.google-g{width:42px;height:42px;display:grid;place-items:center;flex:0 0 auto;border-radius:13px;background:#fff;font:800 1.45rem Arial,sans-serif;color:#4285f4}
+
+.reviews-stage{position:relative;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.10)}
+.reviews-stage-top{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:14px;color:rgba(255,255,255,.54);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.reviews-swipe-hint{color:rgba(255,255,255,.42);font-weight:600;letter-spacing:.04em;text-transform:none}
+.reviews-showcase{display:flex;gap:18px;overflow-x:auto;padding:4px 0 20px;scroll-snap-type:x mandatory;scroll-behavior:auto;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+.reviews-showcase::-webkit-scrollbar{display:none}
+.reviews-showcase.is-dragging{cursor:grabbing;scroll-snap-type:none}
+.review-card{flex:0 0 360px;min-height:470px;display:flex;flex-direction:column;overflow:hidden;position:relative;scroll-snap-align:start;border-radius:24px;background:linear-gradient(160deg,#fff,#f5f9fc);border:1px solid rgba(255,255,255,.12);box-shadow:0 22px 55px rgba(0,0,0,.18);color:var(--ink);transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s var(--ease)}
+.review-card:hover{transform:translateY(-8px);box-shadow:0 30px 70px rgba(0,0,0,.25);border-color:rgba(62,180,232,.38)}
+.review-card.featured-review{flex-basis:520px;background:linear-gradient(160deg,#123452,#0a1e32);color:#fff;border-color:rgba(62,180,232,.24)}
+.review-card::after{content:'\201C';position:absolute;right:18px;bottom:-42px;font:italic 11rem/1 'Instrument Serif',serif;color:rgba(27,142,201,.055);pointer-events:none}
+.featured-review::after{color:rgba(255,255,255,.055)}
+.review-project-image{height:170px;margin:0;border-radius:0;overflow:hidden;position:relative;background:#18334b;flex:0 0 auto}
+.review-project-image::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(6,20,33,.68),transparent 60%)}
+.review-project-image img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.review-card:hover .review-project-image img{transform:scale(1.06)}
+.review-card-top{position:absolute;top:16px;left:16px;right:16px;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.review-service{display:inline-flex;align-items:center;min-height:30px;padding:6px 10px;border-radius:999px;background:rgba(7,22,36,.72);border:1px solid rgba(255,255,255,.16);color:#fff;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:.65rem;font-weight:800;letter-spacing:.10em;text-transform:uppercase}
+.review-stars{display:flex;gap:3px;color:#f0bd58}
+.review-stars svg{width:14px;height:14px;fill:currentColor;stroke-width:1.5}
+.review-card-body{padding:24px 25px 25px;display:flex;flex:1;flex-direction:column;position:relative;z-index:2}
+.review-card blockquote{margin:0;font-size:1rem;font-weight:500;line-height:1.72;color:var(--ink)}
+.featured-review blockquote{font-size:1.3rem;line-height:1.55;color:#fff;max-width:40rem}
+.review-card-label{display:inline-flex;align-items:center;gap:7px;margin-bottom:13px;color:var(--blue-d);font-size:.67rem;font-weight:800;letter-spacing:.10em;text-transform:uppercase}
+.review-card-label::before{content:'';width:18px;height:1px;background:var(--blue)}
+.featured-review .review-card-label{color:var(--blue-glow)}
+.featured-review .review-card-label::before{background:var(--blue-glow)}
+.review-person{display:flex;align-items:center;gap:11px;margin-top:auto;padding-top:18px;border-top:1px solid rgba(31,71,103,.12)}
+.featured-review .review-person{border-top-color:rgba(255,255,255,.15)}
+.review-avatar{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 4px 12px rgba(15,28,46,.16)}
+.review-person b{display:block;font-family:'Syne',sans-serif;font-size:.85rem;color:var(--ink)}
+.review-person span{display:block;margin-top:2px;font-size:.72rem;color:var(--muted)}
+.featured-review .review-person b{color:#fff}
+.featured-review .review-person span{color:rgba(255,255,255,.60)}
+.review-progress{display:flex;align-items:center;gap:12px;padding-top:5px;color:rgba(255,255,255,.42);font-size:.68rem;font-weight:800;letter-spacing:.08em}
+.review-progress-track{height:2px;flex:1;overflow:hidden;background:rgba(255,255,255,.10);border-radius:99px}
+.review-progress-fill{display:block;width:20%;height:100%;background:linear-gradient(90deg,var(--blue),var(--blue-glow));border-radius:99px;transform-origin:left center}
+.reviews-bottom{margin-top:30px;padding:23px 25px;display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid rgba(62,180,232,.18);border-radius:20px;background:linear-gradient(90deg,rgba(255,255,255,.06),rgba(62,180,232,.08));box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.reviews-bottom b{display:block;font-family:'Syne',sans-serif;color:#fff;font-size:1.02rem}
+.reviews-bottom span{display:block;margin-top:4px;color:rgba(232,240,247,.58);font-size:.82rem}
+.reviews-bottom .btn{flex:0 0 auto}
+
+/* ============ SERVES ============ */
+.serves{background:radial-gradient(ellipse at top right,rgba(62,180,232,.15),transparent 50%),radial-gradient(ellipse at bottom left,rgba(212,168,84,.05),transparent 50%),linear-gradient(140deg,var(--night) 0%,var(--night-3) 60%,var(--night-2) 100%);color:#fff;overflow:hidden;position:relative}
+.serves .tag{background:rgba(62,180,232,.14);color:var(--blue-glow)}
+.serves h2{color:#fff}
+.serves h2 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--blue-glow)}
+.serves-head{text-align:center;max-width:44rem;margin:0 auto 50px;position:relative;z-index:2}
+.serves-head .tag{margin-left:auto;margin-right:auto;display:table}
+.serves-head p{color:rgba(255,255,255,.72);margin-top:16px;font-size:1.05rem}
+.serves-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative;z-index:2}
+.serve-card{position:relative;padding:32px 26px;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:22px;transition:.5s var(--ease);overflow:hidden;min-height:220px;display:flex;flex-direction:column;justify-content:space-between}
+.serve-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--blue-glow));transform:scaleX(0);transform-origin:left;transition:.6s var(--ease)}
+.serve-card::after{content:'';position:absolute;top:-80px;right:-80px;width:200px;height:200px;background:radial-gradient(circle,rgba(62,180,232,.15),transparent 70%);opacity:0;transition:.6s;pointer-events:none}
+.serve-card:hover{background:linear-gradient(160deg,rgba(62,180,232,.1),rgba(62,180,232,.03));border-color:rgba(62,180,232,.35);transform:translateY(-6px)}
+.serve-card:hover::before{transform:scaleX(1)}
+.serve-card:hover::after{opacity:1}
+.serve-card .ic{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,rgba(62,180,232,.18),rgba(27,142,201,.08));color:var(--blue-glow);display:grid;place-items:center;margin-bottom:20px;border:1px solid rgba(62,180,232,.2);transition:.4s var(--ease)}
+.serve-card:hover .ic{transform:rotate(-6deg) scale(1.08);background:linear-gradient(135deg,var(--blue-glow),var(--blue-d));color:#fff;border-color:transparent}
+.serve-card .ic svg{width:24px;height:24px}
+.serve-card b{display:block;font-family:'Syne',sans-serif;font-size:1.15rem;color:#fff;margin-bottom:8px;letter-spacing:-.01em}
+.serve-card span{font-size:.88rem;color:rgba(255,255,255,.68);line-height:1.6}
+.serves-cta{text-align:center;margin-top:44px;position:relative;z-index:2}
+.serves-cta .btn{background:#fff;color:var(--blue-d)}
+.serves-cta .btn:hover{background:var(--blue-glow);color:#fff}
+
+/* ============ SERVICE AREA ============ */
+.service-area-sec{background:var(--paper-2);position:relative;overflow:hidden}
+.service-area-sec .sec-h p{max-width:44rem;margin-left:auto;margin-right:auto}
+.service-area-sec h2 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--blue-d)}
+
+/* ============ QUICK-HELP BAND ============ */
+.help-band-sec{padding:60px 0 100px}
+.help-band{margin:0 auto;width:min(1280px,92%);position:relative;border-radius:44px;overflow:hidden;background:#06121e;box-shadow:0 40px 100px rgba(15,28,46,.25);isolation:isolate}
+.help-band::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at top left,rgba(62,180,232,.15),transparent 50%),radial-gradient(circle at bottom right,rgba(27,142,201,.2),transparent 50%);pointer-events:none;z-index:0}
+.help-band::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px);background-size:24px 24px;z-index:0}
+.help-inner{display:grid;grid-template-columns:1fr 1.15fr;gap:0;position:relative;z-index:2;align-items:center}
+.help-l{padding:clamp(40px,6vw,80px);color:#fff;display:flex;flex-direction:column}
+.help-l .tag{width:max-content;background:rgba(62,180,232,.15);color:var(--blue-glow);border:1px solid rgba(62,180,232,.3);margin-bottom:24px;border-radius:999px;padding:8px 18px;font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.help-l h2{color:#fff;font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;max-width:14ch;margin-bottom:12px;font-weight:700;letter-spacing:-.04em}
+.help-l h2 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--blue-glow)}
+.help-l>p{color:rgba(255,255,255,.7);font-size:1.15rem;line-height:1.6;margin-bottom:36px;max-width:32rem}
+.help-cta{display:flex;flex-wrap:wrap;gap:16px}
+.help-cta .btn{border-radius:16px;padding:18px 26px;font-size:1rem}
+.help-cta .btn-g{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.15)}
+.help-cta .btn-g:hover{background:#fff;color:var(--ink);border-color:#fff}
+.help-r{padding:clamp(30px,5vw,60px);display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative}
+.help-r::before{content:'';position:absolute;top:40px;bottom:40px;left:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.15),transparent)}
+.help-mini{display:flex;flex-direction:column;gap:16px;align-items:flex-start;color:#fff;padding:26px;border-radius:24px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:.4s cubic-bezier(0.2,0.8,0.2,1);cursor:default;position:relative;overflow:hidden}
+.help-mini::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.1),transparent);opacity:0;transition:.4s}
+.help-mini:hover{transform:translateY(-5px);border-color:rgba(62,180,232,.4);box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.help-mini:hover::before{opacity:1}
+.help-mini .m-ic{width:52px;height:52px;border-radius:16px;background:rgba(62,180,232,.12);border:1px solid rgba(62,180,232,.25);display:grid;place-items:center;transition:.4s}
+.help-mini:hover .m-ic{background:var(--blue);border-color:var(--blue)}
+.help-mini .m-ic svg{width:24px;height:24px;color:var(--blue-glow);transition:.4s}
+.help-mini:hover .m-ic svg{color:#fff}
+.help-mini strong{display:block;font-family:'Syne',sans-serif;font-size:1.1rem;color:#fff;letter-spacing:-.01em;margin-bottom:4px;position:relative;z-index:2}
+.help-mini span{font-size:.85rem;color:rgba(255,255,255,.6);position:relative;z-index:2;line-height:1.5}
+
+/* ============ CONTACT ============ */
+.contact-sec{background:linear-gradient(180deg,#f5f9fc 0%,#ffffff 100%);overflow:hidden;position:relative}
+.contact-sec::before{content:'';position:absolute;width:600px;height:600px;right:-200px;top:0;background:radial-gradient(circle,rgba(62,180,232,.12),transparent 68%);pointer-events:none}
+.contact-head{text-align:center;max-width:760px;margin:0 auto 50px;position:relative;z-index:2}
+.contact-head .tag{margin-left:auto;margin-right:auto;display:table}
+.contact-head h2{font-size:clamp(2.4rem,5vw,3.8rem);letter-spacing:-.045em;line-height:1.05}
+.contact-head p{font-size:1.1rem;line-height:1.75;color:var(--ink-soft);margin-top:16px}
+.contact-wrap{display:grid;grid-template-columns:1.1fr 0.9fr;gap:30px;max-width:1180px;margin:0 auto;position:relative;z-index:2}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:32px;padding:clamp(30px,4vw,44px);box-shadow:0 30px 80px rgba(15,28,46,.06);position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--blue-d),var(--blue-glow),#4deeea)}
+.form-card::after{content:'';position:absolute;right:-100px;bottom:-100px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(62,180,232,.12),transparent 70%);pointer-events:none}
+.form-card-head{display:flex;align-items:center;gap:18px;margin-bottom:12px;position:relative;z-index:1}
+.form-card-head .fc-ic{width:64px;height:64px;border-radius:20px;background:linear-gradient(135deg,var(--blue-l),#fff);border:1px solid rgba(27,142,201,.2);box-shadow:0 10px 20px rgba(27,142,201,.1);color:var(--blue-d);display:grid;place-items:center;flex:0 0 auto}
+.form-card-head .fc-ic svg{width:28px;height:28px}
+.form-card h3{font-size:1.85rem;margin:0;font-weight:800;letter-spacing:-.03em}
+.form-card>p{margin:0 0 32px;font-size:1.05rem;color:var(--ink-soft);position:relative;z-index:1}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:22px;position:relative;z-index:1}
+.ff{grid-column:1/-1}
+label{display:block;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin-bottom:10px}
+.inp-wrap{position:relative}
+.inp-wrap svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--blue);pointer-events:none;z-index:2}
+.inp-wrap.textarea-wrap svg{top:18px;transform:none}
+input,select,textarea{width:100%;padding:16px 16px 16px 44px;border-radius:16px;border:1.5px solid transparent;background:var(--paper-2);font:500 .95rem 'DM Sans',sans-serif;color:var(--ink);transition:.35s var(--ease);font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:0;background:#fff;border-color:var(--blue-glow);box-shadow:0 0 0 5px rgba(62,180,232,.15);transform:translateY(-2px)}
+textarea{min-height:140px;resize:vertical;padding-top:16px;line-height:1.6}
+select{cursor:pointer;appearance:none;-webkit-appearance:none;padding-right:36px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231b8ec9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;background-size:14px}
+.form-card .btn{width:100%;justify-content:center;margin-top:28px;padding:20px;border-radius:16px;font-size:1.05rem;position:relative;z-index:1;box-shadow:0 15px 35px rgba(27,142,201,.25)}
+#msg{display:none;margin-top:16px;padding:16px;border-radius:14px;text-align:center;font-size:.9rem;font-weight:600}
+.ok{display:block;background:#e8f8ef;color:#0d7a45;border:1px solid #b6e7ca}
+.err{display:block;background:#fff0e8;color:#b33b00;border:1px solid #ffcda8}
+.cm-card{background:linear-gradient(155deg,var(--night),var(--night-2));border:1px solid rgba(255,255,255,.1);border-radius:32px;box-shadow:0 30px 80px rgba(15,28,46,.12);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.cm-card::after{content:'';position:absolute;top:-100px;right:-100px;width:350px;height:350px;background:radial-gradient(circle,rgba(62,180,232,.2),transparent 70%);pointer-events:none}
+.cm-top{padding:clamp(30px,4vw,44px);position:relative;z-index:2;flex:1 1 auto;display:flex;flex-direction:column;justify-content:center}
+.cm-badge{width:max-content;background:rgba(62,180,232,.15);color:var(--blue-glow);border:1px solid rgba(62,180,232,.3);margin-bottom:24px;border-radius:999px;padding:8px 16px;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.cm-badge svg{width:16px;height:16px}
+.cm-top h3{color:#fff;font-size:clamp(2.2rem,3vw,3rem);line-height:1.05;margin-bottom:16px;font-weight:700;letter-spacing:-.04em}
+.cm-top h3 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--blue-glow)}
+.cm-top p{color:rgba(255,255,255,.7);font-size:1.1rem;line-height:1.6;margin-bottom:14px}
+.cm-top p:last-child{margin-bottom:0}
+.cm-map-wrap{flex:0 0 45%;min-height:300px;position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.1)}
+.cm-map-wrap iframe{width:100%;height:100%;border:0}
+.cm-map-overlay{position:absolute;bottom:24px;left:24px;right:24px;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);color:var(--ink);padding:16px 20px;border-radius:16px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:.95rem;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.cm-map-overlay svg{width:20px;height:20px;color:var(--blue-d);flex:0 0 auto}
+
+/* ============ FOOTER ============ */
+.premium-footer{background:radial-gradient(circle at 15% 0%,rgba(62,180,232,.16),transparent 35%),linear-gradient(180deg,#07182c 0%,#040d19 100%);padding:90px 0 28px;position:relative;overflow:hidden}
+.premium-footer::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.03),transparent);transform:translateX(-100%);animation:footerShine 10s linear infinite;pointer-events:none}
+@keyframes footerShine{to{transform:translateX(100%)}}
+.premium-footer .ft{display:grid;grid-template-columns:1.45fr .8fr 1fr 1fr;gap:50px;position:relative;z-index:1}
+.premium-footer .ft-brand p{max-width:330px;color:rgba(255,255,255,.62);margin:10px 0;line-height:1.8}
+.premium-footer .brand-m{box-shadow:0 12px 35px rgba(62,180,232,.35)}
+.premium-footer .ft h4{color:#fff;font-family:'Syne',sans-serif;margin-bottom:22px;font-size:1rem}
+.premium-footer .ft-col a{display:flex;align-items:center;gap:8px;width:max-content;margin:0 0 12px;color:rgba(255,255,255,.62);transition:.3s;font-size:.9rem}
+.premium-footer .ft-col a:hover{color:var(--blue-glow);transform:translateX(5px)}
+.ft-contact svg{width:15px;color:var(--blue-glow)}
+.premium-footer .ft-social{display:flex;gap:10px;margin-top:24px}
+.premium-footer .ft-social a{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:#fff;margin:0}
+.premium-footer .ft-social a:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-3px)}
+.premium-footer .copy{margin-top:60px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.78rem;color:rgba(255,255,255,.7);position:relative;z-index:1}
+.premium-footer .copy a{color:var(--blue-glow);font-weight:700}
+.footer-contact-icons{display:flex;gap:10px;margin-top:18px}
+.premium-footer .ft-col .footer-contact-icons a{width:40px;height:40px;flex:0 0 40px;border-radius:50%;display:grid;place-items:center;background:rgba(27,142,201,.12);border:1px solid rgba(62,180,232,.35);color:var(--blue-glow);transition:.3s;margin:0;padding:0}
+.premium-footer .ft-col .footer-contact-icons a:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateY(-3px)}
+.premium-footer .ft-col .footer-contact-icons a svg{width:18px;height:18px;margin:0}
+
+/* ============ FLOATERS ============ */
+.wa{position:fixed;left:18px;bottom:18px;z-index:30}
+.wa a{display:flex;align-items:center;gap:8px;background:#25d366;color:#fff;padding:14px 20px;border-radius:999px;font-weight:700;font-size:.85rem;box-shadow:0 10px 28px rgba(37,211,102,.35);transition:.3s}
+.wa a:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(37,211,102,.5)}
+.wa svg{width:18px;height:18px}
+#top-btn{position:fixed;right:18px;bottom:18px;z-index:30;width:46px;height:46px;border-radius:50%;display:none;place-items:center;background:var(--night);color:#fff;box-shadow:var(--s);transition:.3s;border:0;cursor:pointer}
+#top-btn:hover{background:var(--blue);transform:translateY(-3px)}
+#top-btn svg{width:18px;height:18px}
+
+/* ============ LIGHTBOX ============ */
+#lb{position:fixed;inset:0;background:rgba(10,22,40,.96);backdrop-filter:blur(15px);z-index:9500;display:none;place-items:center;cursor:pointer}
+#lb.open{display:grid}
+#lb img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:16px;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+.lb-close{position:absolute;top:24px;right:28px;color:#fff;cursor:pointer;background:none;border:0}
+.lb-close svg{width:30px;height:30px}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(24px);transition:.8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.rd1{transition-delay:.08s}
+.rd2{transition-delay:.16s}
+.rd3{transition-delay:.24s}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1100px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .steps-grid{grid-template-columns:repeat(2,1fr)}
+  .serves-cards{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:980px){
+  .menu,.nav-cta .btn-w{display:none}
+  .ham{display:grid}
+  .hero-grid,.about-grid,.help-inner,.ft{grid-template-columns:1fr}
+  .contact-wrap{grid-template-columns:1fr}
+  .about-grid{gap:40px}
+  .about-visual{height:440px}
+
+  .sc-row,.sc-row.reverse{grid-template-columns:1fr}
+  .sc-row.reverse .sc-info,.sc-row .sc-info{order:2}
+  .sc-row.reverse .sc-media,.sc-row .sc-media{order:1}
+  .sc-media{min-height:320px}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 190px 190px}
+  .gal-grid img:first-child{grid-row:span 2}
+  .help-inner{grid-template-columns:1fr}
+  .help-r::before{top:0;left:40px;right:40px;width:auto;height:1px;bottom:auto;background:linear-gradient(to right,transparent,rgba(255,255,255,.15),transparent)}
+  .ft{grid-template-columns:1fr 1fr;gap:30px}
+  .hero-side{transform:none}
+  .reviews-intro{grid-template-columns:1fr;gap:22px}
+  .google-review-link{width:max-content}
+  .review-card.featured-review{flex-basis:470px}
+}
+@media(max-width:720px){
+  .hero{min-height:100svh;min-height:100dvh;height:auto;padding:118px 0 32px;align-items:stretch}
+  .hero-grid{width:min(100% - 36px,540px);display:grid;grid-template-columns:1fr;gap:24px;align-content:start}
+  .hero-side{display:block;order:initial;margin:0;padding:20px;border-radius:20px;background:rgba(10,22,40,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .hero-side h3{font-size:1.1rem;margin-bottom:20px}
+  .hero-side ul{gap:0}
+  .hero-side li{gap:10px;padding:10px 0;font-size:.82rem;line-height:1.45}
+  .hero-side li span{width:26px;height:26px;font-size:.7rem}
+  .hero-side li strong{font-size:.88rem;margin-bottom:1px}
+  .hero-orb{width:390px;height:390px;right:-180px;top:18%}
+  .hero-media::after{background:linear-gradient(180deg,rgba(10,22,40,.55) 0%,rgba(10,22,40,.26) 25%,rgba(10,22,40,.77) 62%,rgba(10,22,40,.96) 100%)}
+  .kicker{margin-bottom:12px;font-size:.62rem;letter-spacing:.15em;gap:8px}
+  .kicker::before{width:24px}
+  .hero h1{max-width:10ch;font-size:clamp(2.4rem,11vw,3.2rem);line-height:1.03}
+  .hero-lead{margin-top:1rem;max-width:31rem;font-size:.92rem;line-height:1.55}
+  .hero-actions{margin-top:1.35rem;gap:10px;display:grid;grid-template-columns:1fr 1fr}
+  .hero-actions .btn{width:100%;padding:14px 8px;font-size:.77rem;justify-content:center}
+  .speciality::before,.speciality::after{display:none}
+  .spec-rail-wrap{padding:24px 0}
+  .spec-rail{gap:14px;padding:0 18px 24px}
+  .spec-card{flex:0 0 min(78vw,290px);height:340px}
+  .svc-grid{grid-template-columns:1fr}
+  .steps-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .step-cell{min-height:275px;padding:19px 15px 17px;border-radius:8px}
+  .step-cell .num{top:17px;left:15px;font-size:1.8rem}
+  .step-icon{top:17px;right:13px;width:41px;height:41px;border-radius:8px}
+  .step-icon svg{width:19px;height:19px}
+  .step-cell h3{padding-top:17px;margin-bottom:6px;font-size:.92rem}
+  .step-cell h3::before{width:25px}
+  .step-cell p{font-size:.74rem;line-height:1.5}
+  .gal-grid{grid-template-columns:1fr;grid-template-rows:repeat(5,180px)}
+  .gal-grid img:first-child{grid-row:auto}
+  .about-visual .av-badge{left:0;bottom:-20px;padding:18px 22px}
+  .serves-cards{grid-template-columns:1fr}
+  .about-values{grid-template-columns:1fr}
+  .about-stats{padding:18px 8px;gap:8px}
+  .astat:not(:last-child)::after{right:-4px}
+  .fg{grid-template-columns:1fr}
+  .wa a span{display:none}
+  .wa a{padding:14px;border-radius:50%}
+  .spec-head{padding:24px 5% 18px}
+  .services-top .rgt{display:none}
+  .sc-info{padding:28px 24px}
+  .form-card{padding:24px}
+  .contact-wrap{grid-template-columns:1fr;gap:20px}
+  .fg{grid-template-columns:1fr;gap:16px}
+  .form-card-head{gap:14px}
+  .form-card-head .fc-ic{width:54px;height:54px}
+  .form-card h3{font-size:1.5rem}
+  .cm-top{padding:28px}
+  .cm-top h3{font-size:1.8rem}
+  .cm-map-overlay{bottom:16px;left:16px;right:16px;padding:12px 16px;font-size:.85rem}
+  .ft{grid-template-columns:1fr;gap:26px}
+  .copy{flex-direction:column;text-align:center}
+  .help-band-sec{padding:25px 0 55px}
+  .help-band{width:calc(100% - 28px);border-radius:28px}
+  .help-l,.help-r{padding:28px 20px}
+  .help-l h2{font-size:2rem;max-width:none}
+  .help-l>p{font-size:.95rem;line-height:1.6}
+  .help-cta{display:grid;grid-template-columns:1fr;gap:10px}
+  .help-cta .btn{width:100%;justify-content:center}
+  .help-r{grid-template-columns:1fr;gap:12px}
+  .help-mini{flex-direction:row;align-items:center;padding:18px;gap:16px}
+  .help-mini .m-ic{width:46px;height:46px}
+  .help-mini strong{font-size:.95rem}
+  .help-mini span{font-size:.78rem}
+  .rev-sec{background:linear-gradient(145deg,#081827 0%,#0c2136 100%)}
+  .reviews-intro{gap:18px;margin-bottom:22px}
+  .reviews-intro h2{max-width:15ch;font-size:clamp(2rem,9.2vw,3rem)}
+  .reviews-intro p{font-size:.9rem;margin-top:14px}
+  .google-review-link{width:100%;min-width:0}
+
+  .reviews-stage{padding-top:18px}
+  .reviews-stage-top{align-items:flex-start;font-size:.64rem}
+  .reviews-swipe-hint{font-size:.68rem;text-align:right}
+  .reviews-showcase{gap:13px;padding-bottom:16px}
+  .review-card,.review-card.featured-review{flex-basis:84vw;min-height:440px;border-radius:20px}
+  .review-project-image{height:150px}
+  .featured-review blockquote{font-size:1.18rem;line-height:1.58}
+  .review-card-body{padding:20px}
+  .review-card blockquote{font-size:.92rem;line-height:1.68}
+  .review-person{padding-top:15px}
+  .reviews-bottom{display:grid;padding:20px;gap:16px;margin-top:22px;border-radius:16px}
+  .reviews-bottom .btn{width:100%;justify-content:center}
+  .rev-hero{padding:32px 26px}
+  .premium-footer{padding:60px 0 25px}
+  .premium-footer .ft{grid-template-columns:1fr;gap:32px}
+  .premium-footer .copy{margin-top:35px;text-align:center;gap:14px}
+  .premium-footer .ft-col a{width:100%}
+  .contact-head{margin-bottom:28px}
+  .contact-head h2{font-size:2rem}
+  .contact-head p{font-size:.92rem}
+}
+@media(max-width:640px){
+  .why-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .why-item{padding:18px 14px}
+  .why-item .ic{width:38px;height:38px;margin-bottom:12px}
+  .why-item b{font-size:.88rem}
+  .why-item span{font-size:.76rem;line-height:1.5}
+}
+@media(max-width:420px){
+  .brand small{display:none}
+  .why-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .why-item{padding:16px 10px}
+  .why-item b{font-size:.82rem}
+  .why-item span{font-size:.7rem}
+}
+@media(max-width:390px){
+  .hero{padding-top:108px;padding-bottom:25px}
+  .hero-grid{width:min(100% - 28px,540px);gap:18px}
+  .hero h1{font-size:2.18rem}
+  .hero-lead{font-size:.86rem}
+  .hero-side{padding:16px}
+  .hero-side li{font-size:.77rem;padding:8px 0}
+  .hero-actions .btn{font-size:.71rem;padding:13px 5px}
+  .step-cell{min-height:265px;padding:18px 13px}
+  .review-card,.review-card.featured-review{flex-basis:86vw;min-height:425px}
+  .review-project-image{height:140px}
+  .review-card-body{padding:18px}
+  .review-card blockquote{font-size:.88rem}
+  .featured-review blockquote{font-size:1.08rem}
+  .reviews-stage-top{gap:8px}
+  .reviews-swipe-hint{font-size:.62rem}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  .reveal{opacity:1;transform:none}
+  .spec-rail{animation:none}
+  .sc-slides img{transition:opacity .3s ease}
+  .review-card,.review-project-image img,.google-review-link{transition:none}
+  .reviews-showcase{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="w nav-in">
+    <a class="brand" href="#top">
+      <div class="brand-m">ST</div>
+      <div><b>Snigdha Traders</b><small>UPVC · Glass · Aluminium · Steel</small></div>
+    </a>
+    <nav class="menu">
+      <a href="#top" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="service-areas.html">Locations</a>
+      <a href="#work">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-w" href="tel:+917864956251">Call</a>
+      <a class="btn btn-b" href="#enquire">Get Quote</a>
+      <button class="ham" id="ham" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav">
+  <button class="close" id="mnavClose" aria-label="Close"><i data-lucide="x"></i></button>
+  <a href="#top">Home</a>
+  <a href="#services">Services</a>
+  <a href="service-areas.html">Locations</a>
+  <a href="#work">Portfolio</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-b" href="#enquire">Get Quote</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <video class="hero-video-desktop" autoplay muted loop playsinline preload="metadata"><source src="STDR-HERO-VIDEO.mp4" type="video/mp4"></video>
+      <video class="hero-video-mobile" autoplay muted loop playsinline preload="metadata"><source src="STDR-HERO-VIDEO-FORMOBILEPHONES.mp4" type="video/mp4"></video>
+    </div>
+    <div class="hero-orb"><i></i></div>
+    <div class="hero-grid">
+      <div>
+        <h1>UPVC Windows &amp; Doors <em>With Complete Glass, Aluminium &amp; Steel Solutions</em></h1>
+        <p class="hero-lead">From modern UPVC windows and doors to glass installations, aluminium systems and steel fabrication, Snigdha Traders delivers complete solutions for residential, commercial and architectural projects with quality materials, skilled workmanship and reliable execution.</p>
+        <div class="hero-actions">
+          <a class="btn btn-b" href="#enquire"><i data-lucide="message-square"></i> Request a quote</a>
+          <a class="btn btn-g" href="#services">See our services</a>
+        </div>
+        <p style="margin-top:14px;font-size:.85rem;color:rgba(232,238,245,.65)">Get a consultation and project estimate from our team.</p>
+      </div>
+      <aside class="hero-side">
+        <h3>Complete Solutions</h3>
+        <ul>
+          <li><span>01</span><div><strong>UPVC Windows &amp; Doors</strong>Modern sliding, casement and entrance systems designed for homes and commercial spaces.</div></li>
+          <li><span>02</span><div><strong>Glass Solutions</strong>Partitions, shower enclosures, railings and customised architectural glass work.</div></li>
+          <li><span>03</span><div><strong>Steel &amp; Aluminium</strong>Railings, gates, frames, shop fronts and fabrication solutions.</div></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SPECIALITIES CAROUSEL -->
+  <section class="speciality" aria-label="Our specialities">
+    <div class="spec-head">
+      <div class="lft">
+        <b>Our Specialities</b>
+        <span>The finished applications we deliver, day in and day out.</span>
+      </div>
+      <div class="rgt"><span class="dot"></span><span>10 core applications</span></div>
+    </div>
+    <div class="spec-rail-wrap">
+      <div class="spec-rail" id="specRail">
+        <div class="spec-card"><span class="spec-tag">01</span><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="UPVC Doors"><div class="spec-body"><div class="spec-num">Speciality</div><h4>UPVC Doors</h4><p>Sliding and openable UPVC entrance and internal doors.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">02</span><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="UPVC Windows"><div class="spec-body"><div class="spec-num">Speciality</div><h4>UPVC Windows</h4><p>Casement, sliding and fixed UPVC window systems.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">03</span><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Balcony Glass"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Balcony Glass</h4><p>Toughened glass balcony glazing and safety panels.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">04</span><img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=800&q=80" alt="Glass Railings"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Glass Railings</h4><p>Stair, balcony and terrace glass railings with steel supports.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">05</span><img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt="Bathroom Glass"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Bathroom Glass</h4><p>Shower enclosures, cubicles and toughened bathroom partitions.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">06</span><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Glass Doors"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Glass Doors</h4><p>Frameless and framed glass doors for entries and interiors.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">07</span><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Glass Partitions"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Glass Partitions</h4><p>Office cabins, meeting rooms and interior glass partitions.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">08</span><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="Decorative Doors"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Decorative Doors</h4><p>Etched and design-detail doors for homes and interiors.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">09</span><img src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?auto=format&fit=crop&w=800&q=80" alt="Temple Work"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Temple Work</h4><p>Custom glass and framing work for home temples.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">10</span><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Aluminium & Steel"><div class="spec-body"><div class="spec-num">Speciality</div><h4>Aluminium &amp; Steel</h4><p>Frames, sliding systems, gates, grills and fabrication.</p></div></div>
+        <!-- clone for seamless loop -->
+        <div class="spec-card"><span class="spec-tag">01</span><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>UPVC Doors</h4><p>Sliding and openable UPVC entrance and internal doors.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">02</span><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>UPVC Windows</h4><p>Casement, sliding and fixed UPVC window systems.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">03</span><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Balcony Glass</h4><p>Toughened glass balcony glazing and safety panels.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">04</span><img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Glass Railings</h4><p>Stair, balcony and terrace glass railings with steel supports.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">05</span><img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Bathroom Glass</h4><p>Shower enclosures, cubicles and toughened bathroom partitions.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">06</span><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Glass Doors</h4><p>Frameless and framed glass doors for entries and interiors.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">07</span><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Glass Partitions</h4><p>Office cabins, meeting rooms and interior glass partitions.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">08</span><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Decorative Doors</h4><p>Etched and design-detail doors for homes and interiors.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">09</span><img src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Temple Work</h4><p>Custom glass and framing work for home temples.</p></div></div>
+        <div class="spec-card"><span class="spec-tag">10</span><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt=""><div class="spec-body"><div class="spec-num">Speciality</div><h4>Aluminium &amp; Steel</h4><p>Frames, sliding systems, gates, grills and fabrication.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="sec services" id="services">
+    <div class="w">
+      <div class="services-top reveal">
+        <div class="lft">
+          <div class="tag">Services</div>
+          <h2>Complete Window, Door &amp; Architectural Solutions.</h2>
+          <p>Advanced UPVC window and door systems supported by experienced glass, aluminium and steel solutions for residential, commercial and architectural requirements.</p>
+        </div>
+        <div class="rgt"><i data-lucide="check-circle-2"></i><span>Residential &amp; Commercial</span></div>
+      </div>
+      <div class="svc-grid reveal rd1">
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="UPVC windows and doors">
+          <span class="svc-num">Service · 01</span>
+          <div class="svc-arrow"><i data-lucide="arrow-up-right"></i></div>
+          <div class="svc-body"><h3>UPVC Windows &amp; Doors</h3><p>Energy-efficient, weather-tight UPVC systems, custom-made and professionally installed for homes and businesses.</p></div>
+        </article>
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Glass solutions">
+          <span class="svc-num">Service · 02</span>
+          <div class="svc-arrow"><i data-lucide="arrow-up-right"></i></div>
+          <div class="svc-body"><h3>Glass Solutions</h3><p>Interior glass work, partitions, railings and custom shower solutions — complementing our UPVC installations.</p></div>
+        </article>
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80" alt="Steel fabrication">
+          <span class="svc-num">Service · 03</span>
+          <div class="svc-arrow"><i data-lucide="arrow-up-right"></i></div>
+          <div class="svc-body"><h3>Steel Fabrication</h3><p>Custom gates, railings and grills built for strength and a clean finish — for complete project requirements.</p></div>
+        </article>
+        <article class="svc">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Aluminium systems">
+          <span class="svc-num">Service · 04</span>
+          <div class="svc-arrow"><i data-lucide="arrow-up-right"></i></div>
+          <div class="svc-body"><h3>Aluminium Systems</h3><p>Sliding systems and frames for modern homes and commercial spaces — an alternative alongside our UPVC range.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="sec why-sec" id="why-us">
+    <div class="w">
+      <div class="sec-h reveal">
+        <div class="tag">Why choose us</div>
+        <h2>Why Choose Our UPVC Windows &amp; Door Solutions</h2>
+        <p>From advanced UPVC window systems to glass, aluminium and fabrication solutions, we combine quality materials, skilled workmanship and reliable installation for residential and commercial projects.</p>
+      </div>
+      <div class="why-grid reveal rd1">
+        <div class="why-item"><div class="ic"><i data-lucide="leaf"></i></div><b>Energy-Efficient UPVC Systems</b><span>Multi-chambered profiles designed to improve insulation and maintain indoor comfort.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="volume-x"></i></div><b>Noise Reduction Performance</b><span>Quality profiles and glazing solutions help create quieter and more comfortable spaces.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="shield-check"></i></div><b>Enhanced Security</b><span>Strong profiles and reliable hardware systems designed for safer homes and workplaces.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="wind"></i></div><b>Weather Protection</b><span>Reliable sealing helps protect interiors from dust, rain and changing weather conditions.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="ruler"></i></div><b>Custom Designs &amp; Sizes</b><span>Solutions customised according to your space, requirements and architectural style.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="hard-hat"></i></div><b>Expert Installation</b><span>Professional measurement, fitting and finishing with attention to every detail.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="package-check"></i></div><b>Quality Materials</b><span>Carefully selected systems built for durability, appearance and long-term performance.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="layers"></i></div><b>Glass &amp; Aluminium Expertise</b><span>Backed by years of experience in glass work, aluminium systems and architectural solutions.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="building-2"></i></div><b>Residential &amp; Commercial Solutions</b><span>Reliable solutions for homes, offices, shops and larger project requirements.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="badge-check"></i></div><b>Reliable Project Execution</b><span>From consultation to completion, every project is managed with care and consistency.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section class="sec showcase" id="showcase">
+    <div class="w">
+      <div class="showcase-head reveal">
+        <div class="tag">Solutions in detail</div>
+        <h2>Explore our solutions in detail — <span class="serif" style="color:var(--blue-d)">built for modern spaces.</span></h2>
+        <p>Explore our UPVC windows, doors, glass solutions, aluminium systems and fabrication capabilities designed for residential and commercial applications.</p>
+      </div>
+      <div class="sc-stack">
+        <article class="sc-row reveal">
+          <div class="sc-info">
+            <div class="sc-num">01</div>
+            <h3>UPVC Windows &amp; <em>Doors</em></h3>
+            <p>Multi-chambered UPVC profiles for windows and doors that keep dust, rain and noise where they belong — outside. Fitted to your opening, not off a shelf.</p>
+            <ul class="sc-feats">
+              <li><i data-lucide="check"></i> Sliding, casement, fixed and openable configurations</li>
+              <li><i data-lucide="check"></i> Weather-sealed with quality gaskets &amp; hardware</li>
+              <li><i data-lucide="check"></i> Low maintenance, no rusting, no repainting</li>
+              <li><i data-lucide="check"></i> Ideal for homes, offices, shops and institutions</li>
+            </ul>
+            <div class="sc-cta">
+              <a class="btn btn-b" href="#enquire"><i data-lucide="message-square"></i> Enquire UPVC</a>
+              <a class="btn btn-o" href="#work">See our work</a>
+            </div>
+          </div>
+          <div class="sc-media">
+            <span class="sc-badge">UPVC · Windows &amp; Doors</span>
+            <div class="sc-slides" data-slideshow>
+              <img class="active" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85" alt="UPVC sliding door">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85" alt="UPVC casement window">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Large UPVC glass opening">
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=85" alt="UPVC entrance door">
+            </div>
+            <div class="sc-dots"></div>
+          </div>
+        </article>
+        <article class="sc-row reverse reveal">
+          <div class="sc-info">
+            <div class="sc-num">02</div>
+            <h3>Glass <em>Solutions</em></h3>
+            <p>Toughened glass partitions, shower enclosures, temple work and interior fittings — measured, cut and installed with clean edges and safe fixings.</p>
+            <ul class="sc-feats">
+              <li><i data-lucide="check"></i> Toughened &amp; laminated glass options</li>
+              <li><i data-lucide="check"></i> Frameless, semi-frameless and framed styles</li>
+              <li><i data-lucide="check"></i> Shower cubicles, office partitions, home temples</li>
+              <li><i data-lucide="check"></i> Precision measurement for a flush, clean fit</li>
+            </ul>
+            <div class="sc-cta">
+              <a class="btn btn-b" href="#enquire"><i data-lucide="message-square"></i> Enquire glass</a>
+              <a class="btn btn-o" href="#work">See our work</a>
+            </div>
+          </div>
+          <div class="sc-media">
+            <span class="sc-badge">Glass · Toughened &amp; Interior</span>
+            <div class="sc-slides" data-slideshow>
+              <img class="active" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Frameless glass partition">
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=85" alt="Glass shower enclosure">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85" alt="Balcony glazing">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Interior glass fitting">
+            </div>
+            <div class="sc-dots"></div>
+          </div>
+        </article>
+        <article class="sc-row reveal">
+          <div class="sc-info">
+            <div class="sc-num">03</div>
+            <h3>Steel <em>Fabrication</em></h3>
+            <p>Gates, railings, grills, staircases and structural steel — welded and finished for strength, safety and a long service life in Indian conditions.</p>
+            <ul class="sc-feats">
+              <li><i data-lucide="check"></i> Custom gates, grills, window bars &amp; railings</li>
+              <li><i data-lucide="check"></i> Staircase railings — steel &amp; glass combinations</li>
+              <li><i data-lucide="check"></i> Structural fabrication for residential &amp; commercial</li>
+              <li><i data-lucide="check"></i> Clean welding, primed and painted to finish</li>
+            </ul>
+            <div class="sc-cta">
+              <a class="btn btn-b" href="#enquire"><i data-lucide="message-square"></i> Enquire steel</a>
+              <a class="btn btn-o" href="#work">See our work</a>
+            </div>
+          </div>
+          <div class="sc-media">
+            <span class="sc-badge">Steel · Fabrication</span>
+            <div class="sc-slides" data-slideshow>
+              <img class="active" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85" alt="Steel fabrication">
+              <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85" alt="Glass staircase railing with steel">
+              <img src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?auto=format&fit=crop&w=1200&q=85" alt="Custom metal work">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85" alt="Steel finish work">
+            </div>
+            <div class="sc-dots"></div>
+          </div>
+        </article>
+        <article class="sc-row reverse reveal">
+          <div class="sc-info">
+            <div class="sc-num">04</div>
+            <h3>Aluminium <em>Systems</em></h3>
+            <p>Modern aluminium profiles for sliding systems, shop fronts, window frames and partitions — light, corrosion-resistant and clean-looking.</p>
+            <ul class="sc-feats">
+              <li><i data-lucide="check"></i> Sliding windows, doors &amp; partition systems</li>
+              <li><i data-lucide="check"></i> Shop fronts and commercial glazing</li>
+              <li><i data-lucide="check"></i> Powder-coated finishes in multiple colours</li>
+              <li><i data-lucide="check"></i> Suited to offices, showrooms &amp; modern homes</li>
+            </ul>
+            <div class="sc-cta">
+              <a class="btn btn-b" href="#enquire"><i data-lucide="message-square"></i> Enquire aluminium</a>
+              <a class="btn btn-o" href="#work">See our work</a>
+            </div>
+          </div>
+          <div class="sc-media">
+            <span class="sc-badge">Aluminium · Modern Profiles</span>
+            <div class="sc-slides" data-slideshow>
+              <img class="active" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Aluminium framing">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Aluminium partition system">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85" alt="Aluminium sliding window">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Aluminium interior glazing">
+            </div>
+            <div class="sc-dots"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPVC SOLUTIONS FOR -->
+  <section class="sec serves">
+    <div class="w">
+      <div class="serves-head reveal">
+        <div class="tag">UPVC Solutions For</div>
+        <h2>Suited to <em>every scale of project.</em></h2>
+        <p>From a single window replacement to complete building requirements — our UPVC systems are made to fit homes, apartments, commercial spaces and institutional projects alike.</p>
+      </div>
+      <div class="serves-cards reveal rd1">
+        <div class="serve-card"><div class="ic"><i data-lucide="home"></i></div><b>Individual Homes</b><span>UPVC windows and doors sized and fitted for private residences.</span></div>
+        <div class="serve-card"><div class="ic"><i data-lucide="building-2"></i></div><b>Apartments &amp; Housing Projects</b><span>Consistent UPVC installations across multiple units and floors.</span></div>
+        <div class="serve-card"><div class="ic"><i data-lucide="brick-wall"></i></div><b>Builders &amp; Contractors</b><span>Reliable UPVC supply and fitting for ongoing construction requirements.</span></div>
+        <div class="serve-card"><div class="ic"><i data-lucide="store"></i></div><b>Commercial Spaces</b><span>Durable, low-maintenance UPVC systems for shops and showrooms.</span></div>
+        <div class="serve-card"><div class="ic"><i data-lucide="building"></i></div><b>Offices</b><span>Energy-efficient UPVC windows that help keep workspaces comfortable.</span></div>
+        <div class="serve-card"><div class="ic"><i data-lucide="hotel"></i></div><b>Institutions</b><span>Schools, guesthouses and community projects handled at scale.</span></div>
+      </div>
+      <div class="serves-cta reveal rd2">
+        <a class="btn btn-light" href="#enquire"><i data-lucide="send"></i> Send your requirement</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS WE HANDLE -->
+  <section class="sec why-sec">
+    <div class="w">
+      <div class="sec-h reveal">
+        <div class="tag">Project Capability</div>
+        <h2>Projects we handle.</h2>
+        <p>Whatever the scale, the same measurement, fabrication and installation standards apply — giving builders, contractors and large customers confidence in the outcome.</p>
+      </div>
+      <div class="why-grid reveal rd1">
+        <div class="why-item"><div class="ic"><i data-lucide="home"></i></div><b>Individual Residential Projects</b><span>Single window or door replacements handled with the same care as larger jobs.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="building-2"></i></div><b>Complete Building Requirements</b><span>Full window and door fit-outs across apartments and multi-unit buildings.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="store"></i></div><b>Commercial Spaces</b><span>Shop fronts, offices and showrooms fitted for durability and appearance.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="hammer"></i></div><b>Renovation Projects</b><span>Replacing old windows and doors with minimal disruption to the site.</span></div>
+        <div class="why-item"><div class="ic"><i data-lucide="package"></i></div><b>Bulk Requirements</b><span>Coordinated supply and installation for larger order volumes and timelines.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="sec gal-sec" id="work">
+    <div class="w">
+      <div class="sec-h reveal">
+        <div class="tag">Our work</div>
+        <h2>A glimpse of recent projects.</h2>
+        <p>A short selection across doors, windows, glass, railings and interior fittings. The full portfolio is available on our dedicated portfolio page.</p>
+      </div>
+      <div class="gal-grid reveal rd1">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Glass interior project">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=85" alt="Window installation project">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85" alt="Exterior fitting project">
+        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=800&q=85" alt="Interior glazing project">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=85" alt="Frame and glass detail">
+      </div>
+      <div class="gal-footer reveal rd2">
+        <a class="btn btn-g" href="#"><i data-lucide="images"></i> View Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="sec about-sec" id="about">
+    <div class="w about-grid">
+      <div class="about-visual reveal">
+        <div class="av-main">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=85" alt="Snigdha Traders reference project">
+        </div>
+        <div class="av-chip">Since 2017</div>
+        <div class="av-badge">
+          <b>7+</b>
+          <span>Years of<br>Experience</span>
+        </div>
+      </div>
+      <div class="reveal rd1">
+        <div class="tag">About Snigdha Traders</div>
+        <h2>A trusted partner for UPVC windows, doors and complete architectural solutions.</h2>
+        <p class="about-lead">Since 2017, we've worked with homeowners, builders and businesses to supply and install UPVC windows and doors that fit the site and hold up over time.</p>
+        <p>Each project is handled directly — from the first site visit and measurement to fabrication and installation — so there is a single point of accountability throughout. Our professional approach, quality workmanship and direct communication have let us grow from a small local outfit into a team capable of taking complete responsibility for residential and commercial projects.</p>
+        <div class="about-values">
+          <div class="av-item"><div class="ic"><i data-lucide="ruler"></i></div><b>Accurate Measurement</b><span>On-site measurement for a clean, consistent final fit.</span></div>
+          <div class="av-item"><div class="ic"><i data-lucide="package-check"></i></div><b>Suitable Materials</b><span>Materials chosen based on the application and requirement.</span></div>
+          <div class="av-item"><div class="ic"><i data-lucide="wrench"></i></div><b>Careful Installation</b><span>Installation by our own team with attention to finish.</span></div>
+          <div class="av-item"><div class="ic"><i data-lucide="headset"></i></div><b>Direct Communication</b><span>Clear updates on scope, timeline and pricing.</span></div>
+        </div>
+        <div class="about-stats">
+          <div class="astat"><b>7+</b><span>Years</span></div>
+          <div class="astat"><b>500+</b><span>Projects</span></div>
+          <div class="astat"><b>500+</b><span>Customers</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="sec process" id="process">
+    <div class="w">
+      <div class="sec-h reveal">
+        <div class="tag">How we work</div>
+        <h2>From first call to final fit.</h2>
+        <p>Four clear stages that keep the project moving and decisions easy to understand.</p>
+      </div>
+      <div class="steps-grid reveal rd1">
+        <div class="step-cell">
+          <span class="num">01</span>
+          <span class="step-icon"><i data-lucide="message-circle"></i></span>
+          <h3>Discuss Your Requirement</h3>
+          <p>Call, WhatsApp or form — UPVC, glass, steel or aluminium.</p>
+        </div>
+        <div class="step-cell">
+          <span class="num">02</span>
+          <span class="step-icon"><i data-lucide="ruler"></i></span>
+          <h3>Site Measurement</h3>
+          <p>We check openings, conditions and finish preferences on location.</p>
+        </div>
+        <div class="step-cell">
+          <span class="num">03</span>
+          <span class="step-icon"><i data-lucide="file-text"></i></span>
+          <h3>Detailed Quote</h3>
+          <p>Material and work spelled out so decisions are straightforward.</p>
+        </div>
+        <div class="step-cell">
+          <span class="num">04</span>
+          <span class="step-icon"><i data-lucide="hammer"></i></span>
+          <h3>Fabrication &amp; Installation</h3>
+          <p>Prepared to measure, fitted carefully, handed over clean.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec rev-sec" id="reviews">
+    <div class="w">
+      <div class="reviews-intro reveal">
+        <div class="reviews-intro-copy">
+          <div class="tag">Client feedback</div>
+          <h2>What customers say about our work.<br><em>From UPVC to glass, aluminium &amp; steel.</em></h2>
+          <p>Feedback spanning UPVC windows and doors, glass installations, aluminium work and steel fabrication — from the first measurement to the final finish.</p>
+        </div>
+        <a class="google-review-link" href="https://share.google/1nigNsI5AdvgN37Rt" target="_blank" rel="noopener noreferrer" aria-label="See all reviews on Google Maps">
+          <span class="google-g">G</span>
+          <span>See all reviews<br><b>on Google Maps</b></span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+
+
+      <div class="reviews-stage">
+        <div class="reviews-stage-top">
+          <span>Customer experiences</span>
+          <span class="reviews-swipe-hint">Drag or swipe to explore</span>
+        </div>
+
+        <div class="reviews-showcase" id="reviewsShowcase" aria-label="Client feedback and testimonials">
+          <article class="review-card featured-review reveal rd0">
+            <div class="review-project-image">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85" alt="Modern UPVC window installation" loading="lazy">
+              <div class="review-card-top"><span class="review-service">UPVC Windows</span><div class="review-stars" aria-label="5 out of 5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div></div>
+            </div>
+            <div class="review-card-body">
+              <span class="review-card-label">Windows &amp; Doors</span>
+              <blockquote>"The team explained every option clearly and the window fitting was completed neatly. The finishing made a real difference to our home."</blockquote>
+              <div class="review-person"><img class="review-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amit Das" loading="lazy"><div><b>Amit Das</b><span>Homeowner · West Bengal</span></div></div>
+            </div>
+          </article>
+
+          <article class="review-card reveal rd1">
+            <div class="review-project-image">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Glass railing project" loading="lazy">
+              <div class="review-card-top"><span class="review-service">Glass Railing</span><div class="review-stars" aria-label="5 out of 5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div></div>
+            </div>
+            <div class="review-card-body">
+              <span class="review-card-label">Glass Solutions</span>
+              <blockquote>"Very professional from measurement to installation. The glass railing feels secure, looks modern and the work area was left clean."</blockquote>
+              <div class="review-person"><img class="review-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Banerjee" loading="lazy"><div><b>Priya Banerjee</b><span>Homeowner · Durgapur</span></div></div>
+            </div>
+          </article>
+
+          <article class="review-card reveal rd2">
+            <div class="review-project-image">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Office glass partition project" loading="lazy">
+              <div class="review-card-top"><span class="review-service">Office Partition</span><div class="review-stars" aria-label="5 out of 5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div></div>
+            </div>
+            <div class="review-card-body">
+              <span class="review-card-label">Commercial Glass</span>
+              <blockquote>"Our office glass partition was installed on time and exactly as discussed. A smooth experience with clear communication throughout."</blockquote>
+              <div class="review-person"><img class="review-avatar" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Sourav Roy" loading="lazy"><div><b>Sourav Roy</b><span>Business Owner · Kolkata</span></div></div>
+            </div>
+          </article>
+
+          <article class="review-card reveal rd0">
+            <div class="review-project-image">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Aluminium door installation" loading="lazy">
+              <div class="review-card-top"><span class="review-service">Aluminium Door</span><div class="review-stars" aria-label="5 out of 5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div></div>
+            </div>
+            <div class="review-card-body">
+              <span class="review-card-label">Aluminium Systems</span>
+              <blockquote>"Good quality material and careful fitting. The team arrived when promised and paid attention to the small details."</blockquote>
+              <div class="review-person"><img class="review-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Rina Ghosh" loading="lazy"><div><b>Rina Ghosh</b><span>Homeowner · Asansol</span></div></div>
+            </div>
+          </article>
+
+          <article class="review-card reveal rd1">
+            <div class="review-project-image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Custom steel gate project" loading="lazy">
+              <div class="review-card-top"><span class="review-service">Steel Fabrication</span><div class="review-stars" aria-label="5 out of 5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div></div>
+            </div>
+            <div class="review-card-body">
+              <span class="review-card-label">Steel Work</span>
+              <blockquote>"The gate and railing work is sturdy, cleanly welded and well finished. Happy with the workmanship and service."</blockquote>
+              <div class="review-person"><img class="review-avatar" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arup Mukherjee" loading="lazy"><div><b>Arup Mukherjee</b><span>Property Owner · Purba Bardhaman</span></div></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="review-progress" aria-hidden="true"><span>01</span><div class="review-progress-track"><i class="review-progress-fill"></i></div><span>05</span></div>
+      </div>
+
+      <div class="reviews-bottom reveal">
+        <div><b>Have we completed a project for you?</b><span>Your feedback helps other customers choose with confidence.</span></div>
+        <a class="btn btn-light" href="https://share.google/1nigNsI5AdvgN37Rt" target="_blank" rel="noopener noreferrer"><i data-lucide="star"></i> Leave a Google review</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="sec service-area-sec">
+    <div class="w">
+      <div class="sec-h center reveal">
+        <div class="tag">Where we work</div>
+        <h2>Serving Residential &amp; Commercial Projects <em>Across Multiple Locations.</em></h2>
+        <p>From single-window replacements to full commercial fit-outs, our team follows the same measurement, fabrication and installation standards on every project — whatever the scale, and wherever the site.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK-HELP BAND -->
+  <section class="help-band-sec">
+    <div class="help-band reveal">
+      <div class="help-inner">
+        <div class="help-l">
+          <div class="tag">Quick help</div>
+          <h2>Not sure which material suits <em>your opening?</em></h2>
+          <p>Describe the space — home, shop or office — and we'll suggest a practical option for budget, use and maintenance. No obligation, no pressure.</p>
+          <div class="help-cta">
+            <a class="btn btn-light" href="#enquire"><i data-lucide="message-square"></i> Start an enquiry</a>
+            <a class="btn btn-g" href="tel:+917864956251"><i data-lucide="phone"></i> Call directly</a>
+          </div>
+        </div>
+        <div class="help-r">
+          <div class="help-mini">
+            <div class="m-ic"><i data-lucide="phone"></i></div>
+            <div><strong>+91 78649 56251</strong><span>Primary phone line</span></div>
+          </div>
+          <div class="help-mini">
+            <div class="m-ic"><i data-lucide="message-circle"></i></div>
+            <div><strong>+91 78649 56251</strong><span>Send photos of your site</span></div>
+          </div>
+          <div class="help-mini">
+            <div class="m-ic"><i data-lucide="clock"></i></div>
+            <div><strong>Mon–Sat · 9am–7pm</strong><span>Sunday by appointment</span></div>
+          </div>
+          <div class="help-mini">
+            <div class="m-ic"><i data-lucide="map-pin"></i></div>
+            <div><strong>Palla Srirampur</strong><span>Purba Bardhaman, WB — 713103</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec contact-sec" id="contact">
+    <div class="w">
+      <div class="contact-head reveal">
+        <div class="tag">Contact &amp; Enquiry</div>
+        <h2>Request a quote or ask a question.</h2>
+        <p>Get a consultation and project estimate from our team. First time reaching out is welcome — share the basics and we respond during business hours.</p>
+      </div>
+      <div class="contact-wrap" id="enquire">
+        <form class="form-card reveal" id="form">
+          <div class="form-card-head">
+            <div class="fc-ic"><i data-lucide="file-text"></i></div>
+            <h3>Enquiry form</h3>
+          </div>
+          <p>For quotes and general enquiries about UPVC, glass, steel or aluminium work.</p>
+          <div class="fg">
+            <div>
+              <label for="name">Name *</label>
+              <div class="inp-wrap"><i data-lucide="user"></i><input id="name" required autocomplete="name" placeholder="Your full name"></div>
+            </div>
+            <div>
+              <label for="phone">Phone *</label>
+              <div class="inp-wrap"><i data-lucide="phone"></i><input id="phone" required type="tel" autocomplete="tel" placeholder="10-digit number"></div>
+            </div>
+            <div class="ff">
+              <label for="need">What do you need? *</label>
+              <div class="inp-wrap"><i data-lucide="layers"></i>
+                <select id="need" required>
+                  <option value="">Select a service</option>
+                  <option>UPVC Windows &amp; Doors</option>
+                  <option>Glass Solutions</option>
+                  <option>Aluminium Systems</option>
+                  <option>Steel Fabrication</option>
+                  <option>Multiple services</option>
+                  <option>General enquiry</option>
+                </select>
+              </div>
+            </div>
+            <div class="ff">
+              <label for="loc">Location / Area</label>
+              <div class="inp-wrap"><i data-lucide="map-pin"></i><input id="loc" placeholder="City / Area" autocomplete="address-level2"></div>
+            </div>
+            <div class="ff">
+              <label for="details">Project details *</label>
+              <div class="inp-wrap textarea-wrap"><i data-lucide="align-left"></i><textarea id="details" required placeholder="Rough sizes, quantity, timeline, or your question..."></textarea></div>
+            </div>
+          </div>
+          <button class="btn btn-b" type="submit"><i data-lucide="send"></i> Send enquiry</button>
+          <div id="msg"></div>
+        </form>
+
+        <div class="cm-card reveal rd1">
+          <div class="cm-top">
+            <div class="cm-badge"><i data-lucide="map"></i> Visit our showroom</div>
+            <h3>Experience the <em>quality</em> in person</h3>
+            <p>Pictures don't always do justice. Drop by our facility in Palla Srirampur to touch, feel, and explore our premium UPVC profiles, heavy-duty aluminium sections, and custom glass finishes firsthand.</p>
+            <p>We're conveniently located in Purba Bardhaman. Let's sit down and discuss your next project over a cup of coffee.</p>
+          </div>
+          <div class="cm-map-wrap">
+            <iframe title="Snigdha Traders map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Palla%20Srirampur%2C%20Purba%20Bardhaman%2C%20West%20Bengal%20713103&output=embed"></iframe>
+            <div class="cm-map-overlay">
+              <i data-lucide="map-pin"></i> Visit our facility at Palla Srirampur
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="premium-footer">
+  <div class="w ft">
+    <div class="ft-brand">
+      <a class="brand" href="#top">
+        <div class="brand-m">ST</div>
+        <div><b style="color:#fff">Snigdha Traders</b><small style="color:var(--blue-glow)">UPVC · Glass · Aluminium · Steel</small></div>
+      </a>
+      <p>Complete window, door, glass and fabrication solutions for residential and commercial projects with quality workmanship and reliable execution.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Explore</h4>
+      <a href="service-areas.html">Service Areas</a>
+      <a href="#services">Services</a>
+      <a href="#showcase">Solutions</a>
+      <a href="#work">Projects</a>
+      <a href="#about">About us</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <div class="ft-col">
+      <h4>Our Services</h4>
+      <a href="#services">UPVC Windows &amp; Doors</a>
+      <a href="#services">Glass Solutions</a>
+      <a href="#services">Aluminium Systems</a>
+      <a href="#services">Steel Fabrication</a>
+    </div>
+    <div class="ft-col ft-contact">
+      <h4>Contact Us</h4>
+      <a href="tel:+917864956251"><i data-lucide="phone"></i> Call · +91 78649 56251 · +91 90646 43098</a>
+      <a href="https://wa.me/917864956251" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp · +91 78649 56251</a>
+      <a href="mailto:snigdhatraders1991@gmail.com"><i data-lucide="mail"></i> Email · snigdhatraders1991@gmail.com</a>
+      <a href="#contact"><i data-lucide="map-pin"></i> Visit Us · Palla Srirampur, West Bengal</a>
+      <div class="footer-contact-icons" aria-label="Contact options">
+        <a href="tel:+917864956251" aria-label="Call"><i data-lucide="phone"></i></a>
+        <a href="https://wa.me/917864956251" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+        <a href="mailto:snigdhatraders1991@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        <a href="#contact" aria-label="Map"><i data-lucide="map-pin"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="w copy">
+    <span>&copy; <span id="yr"></span> Snigdha Traders · West Bengal</span>
+    <span>Designed &amp; Developed by <a href="https://revert-pixels.web.app/" target="_blank" rel="noopener">Revert Pixels</a></span>
+  </div>
+</footer>
+
+<div class="wa"><a href="https://wa.me/917864956251?text=Hello%20Snigdha%20Traders%2C%20I%20want%20to%20enquire." target="_blank" rel="noopener"><i data-lucide="message-circle"></i><span>WhatsApp</span></a></div>
+<button id="top-btn" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+<div id="lb">
+  <button class="lb-close" aria-label="Close"><i data-lucide="x"></i></button>
+  <img id="lb-img" alt="Project preview">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  try { if (window.lucide && lucide.createIcons) lucide.createIcons(); } catch (e) { console.warn(e); }
+
+  var nav = document.getElementById('nav');
+  var topBtn = document.getElementById('top-btn');
+  function onScroll() {
+    if (window.scrollY > 30) nav.classList.add('on'); else nav.classList.remove('on');
+    topBtn.style.display = window.scrollY > 500 ? 'grid' : 'none';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  var ham = document.getElementById('ham');
+  var mnav = document.getElementById('mnav');
+  var mnavClose = document.getElementById('mnavClose');
+  ham.addEventListener('click', function () { mnav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+  mnavClose.addEventListener('click', function () { mnav.classList.remove('open'); document.body.style.overflow = ''; });
+  mnav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { mnav.classList.remove('open'); document.body.style.overflow = ''; });
+  });
+
+  topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  var secs = document.querySelectorAll('main section[id]');
+  var links = document.querySelectorAll('.menu a');
+  window.addEventListener('scroll', function () {
+    var cur = '';
+    secs.forEach(function (s) { if (window.scrollY >= s.offsetTop - 140) cur = s.id; });
+    links.forEach(function (l) {
+      if (l.getAttribute('href') === '#' + cur) l.classList.add('active');
+      else l.classList.remove('active');
+    });
+  }, { passive: true });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = this.getAttribute('href');
+      if (!id || id.length < 2) return;
+      var t = document.querySelector(id);
+      if (t) {
+        e.preventDefault();
+        window.scrollTo({ top: t.offsetTop - 70, behavior: 'smooth' });
+      }
+    });
+  });
+
+  var yr = document.getElementById('yr');
+  if (yr) yr.textContent = new Date().getFullYear();
+
+  document.querySelectorAll('[data-slideshow]').forEach(function (box) {
+    var imgs = box.querySelectorAll('img');
+    if (imgs.length < 2) return;
+    var dotsWrap = box.parentElement.querySelector('.sc-dots');
+    var dots = [];
+    imgs.forEach(function (_, i) {
+      var d = document.createElement('span');
+      if (i === 0) d.classList.add('on');
+      d.addEventListener('click', function () { go(i); reset(); });
+      dotsWrap.appendChild(d);
+      dots.push(d);
+    });
+    var idx = 0, timer;
+    function go(next) {
+      imgs[idx].classList.remove('active');
+      dots[idx].classList.remove('on');
+      idx = (next + imgs.length) % imgs.length;
+      imgs[idx].classList.add('active');
+      dots[idx].classList.add('on');
+    }
+    function tick() { go(idx + 1); }
+    function reset() { clearInterval(timer); timer = setInterval(tick, 4200); }
+    reset();
+    box.parentElement.addEventListener('mouseenter', function () { clearInterval(timer); });
+    box.parentElement.addEventListener('mouseleave', reset);
+  });
+
+  var lb = document.getElementById('lb');
+  var lbi = document.getElementById('lb-img');
+  document.querySelectorAll('.gal-grid img').forEach(function (im) {
+    im.addEventListener('click', function () {
+      lbi.src = im.src; lbi.alt = im.alt || '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function closeLb() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  lb.addEventListener('click', function (e) { if (e.target !== lbi) closeLb(); });
+  document.querySelector('.lb-close').addEventListener('click', closeLb);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+
+  var done = false;
+  var co = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (e.isIntersecting && !done) {
+        done = true;
+        document.querySelectorAll('.astat b, .av-badge b').forEach(function (el) {
+          var t = el.textContent;
+          var n = parseInt(t.replace(/[^0-9]/g, ''), 10);
+          if (!n) return;
+          var suf = t.replace(/[0-9]/g, '');
+          var s = 0, step = Math.max(15, Math.floor(1400 / n));
+          var tm = setInterval(function () {
+            s++; el.textContent = s + suf;
+            if (s >= n) { clearInterval(tm); el.textContent = t; }
+          }, step);
+        });
+      }
+    });
+  }, { threshold: 0.2 });
+  var aboutEl = document.getElementById('about');
+  if (aboutEl) co.observe(aboutEl);
+
+  // Reviews carousel — infinite auto-scroll with drag/swipe
+  (function () {
+    var rail = document.getElementById('reviewsShowcase');
+    var progress = document.querySelector('.review-progress-fill');
+    if (!rail) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var cards = Array.prototype.slice.call(rail.querySelectorAll('.review-card'));
+    if (cards.length < 2) return;
+
+    cards.forEach(function(card){
+      var clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden','true');
+      clone.classList.remove('reveal','in');
+      rail.appendChild(clone);
+    });
+
+    var halfWidth = 0;
+    function measure(){ halfWidth = rail.scrollWidth / 2; }
+    measure();
+    window.addEventListener('resize', measure, {passive:true});
+
+    var auto = true;
+    var dragging = false;
+    var startX = 0;
+    var startScroll = 0;
+    var lastX = 0;
+    var lastTime = 0;
+    var velocity = 0;
+    var resumeTimer = null;
+
+    function normalize(){
+      if (halfWidth <= 0) return;
+      if (rail.scrollLeft >= halfWidth) rail.scrollLeft -= halfWidth;
+      else if (rail.scrollLeft < 0) rail.scrollLeft += halfWidth;
+    }
+
+    function scheduleResume(){
+      clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(function(){ auto = true; }, 1800);
+    }
+
+    function updateProgress(){
+      if (!progress || halfWidth <= 0) return;
+      var ratio = (rail.scrollLeft % halfWidth) / Math.max(1, halfWidth - rail.clientWidth);
+      ratio = Math.max(0, Math.min(1, ratio));
+      progress.style.width = (20 + ratio * 80) + '%';
+    }
+
+    function frame(){
+      if (auto && !dragging){
+        rail.scrollLeft += 0.42;
+        normalize();
+      } else if (!dragging && Math.abs(velocity) > 0.05){
+        rail.scrollLeft -= velocity;
+        velocity *= 0.93;
+        normalize();
+      }
+      updateProgress();
+      requestAnimationFrame(frame);
+    }
+
+    rail.addEventListener('pointerdown', function(e){
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      dragging = true;
+      auto = false;
+      clearTimeout(resumeTimer);
+      startX = e.clientX;
+      startScroll = rail.scrollLeft;
+      lastX = e.clientX;
+      lastTime = performance.now();
+      velocity = 0;
+      rail.classList.add('is-dragging');
+      rail.setPointerCapture(e.pointerId);
+    });
+
+    rail.addEventListener('pointermove', function(e){
+      if (!dragging) return;
+      var now = performance.now();
+      var dx = e.clientX - startX;
+      rail.scrollLeft = startScroll - dx;
+      var dt = Math.max(1, now - lastTime);
+      velocity = (e.clientX - lastX) / dt * 16;
+      lastX = e.clientX;
+      lastTime = now;
+      normalize();
+    });
+
+    function release(e){
+      if (!dragging) return;
+      dragging = false;
+      rail.classList.remove('is-dragging');
+      if (e && rail.hasPointerCapture && rail.hasPointerCapture(e.pointerId)) rail.releasePointerCapture(e.pointerId);
+      scheduleResume();
+    }
+    rail.addEventListener('pointerup', release);
+    rail.addEventListener('pointercancel', release);
+    rail.addEventListener('pointerleave', function(e){ if (dragging && e.pointerType === 'mouse') release(e); });
+
+    rail.addEventListener('wheel', function(){
+      auto = false;
+      scheduleResume();
+    }, {passive:true});
+
+    rail.addEventListener('scroll', updateProgress, {passive:true});
+    requestAnimationFrame(frame);
+  })();
+
+  // Process step toggle
+  document.querySelectorAll('.step-cell').forEach(function (cell) {
+    cell.addEventListener('click', function () {
+      document.querySelectorAll('.step-cell.is-active').forEach(function (item) { if (item !== cell) item.classList.remove('is-active'); });
+      cell.classList.toggle('is-active');
+    });
+  });
+
+  // Form handler
+  var form = document.getElementById('form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var msg = document.getElementById('msg');
+      var name = document.getElementById('name').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var need = document.getElementById('need').value;
+      var details = document.getElementById('details').value.trim();
+      if (!name || !need || !details) { msg.className = 'err'; msg.textContent = 'Please fill all required fields.'; return; }
+      if (!/^[0-9+\s-]{10,}$/.test(phone)) { msg.className = 'err'; msg.textContent = 'Enter a valid mobile number.'; return; }
+      msg.className = 'ok'; msg.textContent = 'Sending...';
+      setTimeout(function () {
+        msg.textContent = 'Thank you. Your enquiry was received. We will contact you shortly.';
+        form.reset();
+      }, 900);
+    });
+  }
+});
+</script>
+<script>
+// Continuous Auto-advance Specialities marquee with native scroll support
+(function(){
+  var rail = document.getElementById("specRail");
+  if(!rail) return;
+  
+  // Duplicate content for a seamless infinite loop
+  rail.innerHTML += rail.innerHTML;
+  
+  var isHovered = false;
+  var isTouching = false;
+  var position = rail.scrollLeft;
+  
+  function animate() {
+    if (!isHovered && !isTouching) {
+      position += 1;
+      // If we've scrolled past half (the original content), reset to start seamlessly
+      if (position >= rail.scrollWidth / 2) {
+        position -= rail.scrollWidth / 2;
+      }
+      rail.scrollLeft = position;
+    } else {
+      // Keep position synced if the user manually swipes
+      position = rail.scrollLeft;
+    }
+    requestAnimationFrame(animate);
+  }
+
+  rail.addEventListener('mouseenter', function(){ isHovered = true; });
+  rail.addEventListener('mouseleave', function(){ isHovered = false; });
+  rail.addEventListener('touchstart', function(){ isTouching = true; }, {passive:true});
+  rail.addEventListener('touchend', function(){ isTouching = false; }, {passive:true});
+  
+  // Handle infinite loop if the user manually swipes past the boundaries
+  rail.addEventListener('scroll', function() {
+    if (!isHovered && !isTouching) return;
+    if (rail.scrollLeft >= rail.scrollWidth / 2) {
+      rail.scrollLeft -= rail.scrollWidth / 2;
+      position = rail.scrollLeft;
+    } else if (rail.scrollLeft <= 0) {
+      rail.scrollLeft += rail.scrollWidth / 2;
+      position = rail.scrollLeft;
+    }
+  }, {passive:true});
+
+  animate();
+})();
+</script>
+</body>
+</html>
